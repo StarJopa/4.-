@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_work.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_work"
+        mc:Ignorable="d"
+        Title="Сумма и нечетные числа" Height="300" Width="400">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" Text="Введите число A:"/>
+        <TextBox x:Name="txtA" HorizontalAlignment="Left" Height="23" Margin="150,20,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top" Text="Введите число B:"/>
+        <TextBox x:Name="txtB" HorizontalAlignment="Left" Height="23" Margin="150,60,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <Button x:Name="SumButton" Content="Вычислить сумму" HorizontalAlignment="Left" Margin="30,100,0,0" VerticalAlignment="Top" Width="150" Click="SumButton_Click"/>
+        <Button x:Name="OddNumbersButton" Content="Показать нечетные" HorizontalAlignment="Right" Margin="0,100,50,0" VerticalAlignment="Top" Width="150" Click="OddNumbersButton_Click"/>
+
+        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Height="100" Width="320" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
